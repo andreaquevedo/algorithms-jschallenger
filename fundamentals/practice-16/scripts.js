@@ -1,16 +1,12 @@
-// Multiplication, division, and comparison operators
+// Check if a number is a whole number
 
-//Write a function that takes two numbers (a and b) as arguments. If a is smaller than b, divide a by b. Otherwise, multiply both numbers. Return the resulting value
+// Write a function that takes a number (a) as argument. If a is a whole number (has no decimal place), return true. Otherwise, return false.
 
-function myFunction(a, b){
-    if(a < b) {
-        return a / b
-    }else{
-        return a * b
-    }
+function myFunction(a){
+    return Number.isInteger(a)
 }
 
-console.log(myFunction(10, 100))
-console.log(myFunction(90,45))
-console.log(myFunction(8, 20))
-console.log(myFunction(2, 0.5))
+console.log(myFunction(4))
+console.log(myFunction(1.123))
+console.log(myFunction(1048))
+console.log(myFunction(10.48))

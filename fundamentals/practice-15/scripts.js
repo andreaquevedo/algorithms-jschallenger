@@ -1,12 +1,12 @@
-// Check if a number is a whole number
+// How many times does a character occur?
 
-// Write a function that takes a number (a) as argument. If a is a whole number (has no decimal place), return true. Otherwise, return false.
+// Write a function that takes two strings (a and b) as arguments. Return the number of times a occurs in b.
 
-function myFunction(a){
-    return Number.isInteger(a)
+function myFunction(a, b){
+     return b.split("").filter((item) => item === a).length
 }
 
-console.log(myFunction(4))
-console.log(myFunction(1.123))
-console.log(myFunction(1048))
-console.log(myFunction(10.48))
+console.log(myFunction('m', 'how many times does the character occur in this sentence?'))
+console.log(myFunction('h', 'how many times does the character occur in this sentence?'))
+console.log(myFunction('?', 'how many times does the character occur in this sentence?'))
+console.log(myFunction('z', 'how many times does the character occur in this sentence?'))

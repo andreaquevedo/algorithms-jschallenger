@@ -1,12 +1,16 @@
-// Round a number to 2 decimal places
+// Multiplication, division, and comparison operators
 
-// Write a function that takes a number (a) as argument. Round a to the 2nd digit after the decimal point. Return the rounded number
+//Write a function that takes two numbers (a and b) as arguments. If a is smaller than b, divide a by b. Otherwise, multiply both numbers. Return the resulting value
 
-function myFunction(a){
-    return Number(a.toFixed(2))
+function myFunction(a, b){
+    if(a < b) {
+        return a / b
+    }else{
+        return a * b
+    }
 }
 
-console.log(myFunction(2.12397))
-console.log(myFunction(3.136))
-console.log(myFunction(1.12397))
-console.log(myFunction(26.1379))
+console.log(myFunction(10, 100))
+console.log(myFunction(90,45))
+console.log(myFunction(8, 20))
+console.log(myFunction(2, 0.5))
